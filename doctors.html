@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HospitalCare | </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="site-header">
+      <a class="logo" href="home.html" aria-label="HospitalCare home"><span></span></a>
+      <nav aria-label="Main navigation"><a href="home.html">Home</a><a href="doctors.html">Doctors</a><a href="booking.html">Book Appointment</a><a href="appointments.html">My Appointments</a></nav>
+      <div class="account-area"><span id="userName" class="user-name"></span><button id="logoutButton" class="text-button" type="button">Log out</button></div>
+    </header>
+    <section id="doctors" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"></p><h2></h2></div><p class="section-intro">Experienced specialists ready to listen and help.</p></div>
+      <div class="doctor-list">
+        <article class="doctor-card"><img class="doctor-image" src="images/doctor-arshad.svg" alt="Dr. Shaik Arshad Vali"><div><h3>Dr. Shaik Arshad Vali</h3><p></p><span class="availability"></span></div><button class="secondary-button doctor-button" type="button" data-doctor="Dr. Shaik Arshad Vali">Book appointment</button></article>
+        <article class="doctor-card"><img class="doctor-image" src="images/doctor-vikram.svg" alt="Dr. Vikram Reddy"><div><h3>Dr. Vikram Reddy</h3><p>Cardiologist</p><span class="availability">Available tomorrow</span></div><button class="secondary-button doctor-button" type="button" data-doctor="Dr. Vikram Reddy">Book appointment</button></article>
+        <article class="doctor-card"><img class="doctor-image" src="images/doctor-meera.svg" alt="Dr. Meera Shah"><div><h3>Dr. Meera Shah</h3><p></p><span class="availability"></span></div><button class="secondary-button doctor-button" type="button" data-doctor="Dr. Meera Shah">Book appointment</button></article>
+      </div>
+    </section>
+    <section class="section container community-strip">
+      <div class="section-heading"><div><p class="eyebrow"></p><h2></h2></div></div>
+      <div class="community-gallery compact-gallery">
+        <figure><img src="images/community-care-1.jpeg" alt="Community healthcare visit in a pharmacy"></figure>
+        <figure><img src="images/community-care-2.jpeg" alt="Healthcare team at a pharmacy counter"></figure>
+        <figure><img src="images/community-care-3.jpeg" alt="Community health discussion in a pharmacy"></figure>
+        <figure><img src="images/community-care-4.jpeg" alt="Community members discussing healthcare"></figure>
+      </div>
+    </section>
+    <footer><p></p><p></p></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

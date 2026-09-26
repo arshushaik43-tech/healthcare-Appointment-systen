@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HospitalCare | My Appointments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="site-header">
+      <a class="logo" href="home.html" aria-label="HospitalCare home">Hospital<span>Care</span></a>
+      <nav aria-label="Main navigation"><a href="home.html">Home</a><a href="doctors.html">Doctors</a><a href="booking.html">Book Appointment</a><a href="appointments.html">My Appointments</a></nav>
+      <div class="account-area"><span id="userName" class="user-name"></span><button id="logoutButton" class="text-button" type="button">Log out</button></div>
+    </header>
+    <section id="appointments" class="section container"><div class="section-heading"><div><p class="eyebrow">Your schedule</p><h2>My appointments</h2></div></div><div id="appointmentList" class="appointment-list"></div></section>
+    <footer><p>HospitalCare | Hospital Appointment System - Student Project</p><p>Demo only. No real medical appointment is created.</p></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HospitalCare | Book Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="site-header">
+      <a class="logo" href="home.html" aria-label="HospitalCare home">Hospital<span>Care</span></a>
+      <nav aria-label="Main navigation"><a href="home.html">Home</a><a href="doctors.html">Doctors</a><a href="booking.html">Book Appointment</a><a href="appointments.html">My Appointments</a></nav>
+      <div class="account-area"><span id="userName" class="user-name"></span><button id="logoutButton" class="text-button" type="button">Log out</button></div>
+    </header>
+    <section id="booking" class="section booking-section"><div class="container booking-layout"><div class="booking-copy"><p class="eyebrow">Reserve your time</p><h2>Book an appointment</h2><p>Complete the form and your appointment will appear in My Appointments.</p></div>
+      <form id="appointmentForm" class="appointment-form"><div class="form-grid"><div class="field full-width"><label for="patient">Patient name</label><input type="text" id="patient" placeholder="Enter your name" required></div><div class="field"><label for="doctor">Select doctor</label><select id="doctor" required><option value="">Choose a doctor</option><option>Dr. Shaik Arshad Vali</option><option>Dr. Vikram Reddy</option><option>Dr. Meera Shah</option></select></div><div class="field"><label for="date">Appointment date</label><input type="date" id="date" required></div><div class="field"><label for="time">Appointment time</label><select id="time" required><option value="">Choose a time</option><option value="09:00">9:00 AM</option><option value="10:00">10:00 AM</option><option value="11:00">11:00 AM</option><option value="14:00">2:00 PM</option><option value="15:00">3:00 PM</option></select></div><div class="field full-width"><label for="reason">Reason for visit <span>(optional)</span></label><textarea id="reason" placeholder="Tell the doctor how we can help"></textarea></div></div><button type="submit" class="primary-button">Confirm appointment</button><p id="message" class="form-message" role="status"></p></form>
+    </div></section>
+    <footer><p>HospitalCare | Hospital Appointment System - Student Project</p><p>Demo only. No real medical appointment is created.</p></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
